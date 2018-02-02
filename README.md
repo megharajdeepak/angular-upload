@@ -1,27 +1,29 @@
-# AngularUpload
+# Angular - Node File Upload App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
 
-## Development server
+## Steps to run the application
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Download the project and install all dependencies using `npm install`
 
-## Code scaffolding
+2. Use `npm run start` to execute both server and client together.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Wait until you see the following messages in command prompt\terminal:
+[0] Server listening on port 3000
+[1] ** NG Live Development Server is listening on localhost:4200, open your brow
+ser on http://localhost:4200/ **
+[1] Date: 2018-02-02T15:41:00.937Z
+[1] Hash: 05b791ba410ca3afe284
+[1] Time: 14082ms
+[1] chunk {inline} inline.bundle.js (inline) 5.79 kB [entry] [rendered]
+[1] chunk {main} main.bundle.js (main) 47.8 kB [initial] [rendered]
+[1] chunk {polyfills} polyfills.bundle.js (polyfills) 564 kB [initial] [rendered
+]
+[1] chunk {styles} styles.bundle.js (styles) 35 kB [initial] [rendered]
+[1] chunk {vendor} vendor.bundle.js (vendor) 8.01 MB [initial] [rendered]
+[1]
+[1] webpack: Compiled successfully.
 
-## Build
+4. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

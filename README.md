@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 1. Download the project and install all dependencies using `npm install`
 
-2. Use `npm run start` to execute both server and client together.
+2. Use `npm run start` to execute both server(http://localhost:3000) and client(http://localhost:4200) together.
 
 3. Wait until you see the following messages in command prompt\terminal:
 ```ruby

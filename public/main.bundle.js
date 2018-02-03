@@ -57,7 +57,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title = 'app';
     }
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
@@ -129,7 +128,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".btn:focus,\r\n.upload-btn:focus {\r\n    outline: 0 !important;\r\n}\r\n\r\n.row {\r\n    margin-top: 80px;\r\n}\r\n\r\n.upload-btn {\r\n    color: #ffffff;\r\n    background-color: #893380;\r\n    border: none;\r\n    -webkit-transition: all 1s ease;\r\n    transition: all 1s ease;\r\n}\r\n\r\n.upload-btn:hover,\r\n.upload-btn:focus,\r\n.upload-btn:active,\r\n.upload-btn.active {\r\n    color: #ffffff;\r\n    background-color: #530b4c;\r\n    border: none;\r\n}\r\n\r\nh4 {\r\n    padding-bottom: 30px;\r\n    color: #B8BDC1;\r\n}\r\n\r\n.glyphicon {\r\n    font-size: 5em;\r\n    color: #9CA3A9;\r\n}\r\n\r\nh2 {\r\n    margin-top: 15px;\r\n    color: #68757E;\r\n}\r\n\r\n.panel {\r\n    padding-top: 20px;\r\n    padding-bottom: 20px;\r\n}\r\n\r\nh3.error {\r\n    background: rgb(247, 54, 54);\r\n    color: rgb(248, 248, 248);\r\n    padding: 0.8em;\r\n}\r\n\r\n#upload-input {\r\n    display: none;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .main-container {\r\n        width: 100%;\r\n    }\r\n}\r\n\r\n@media (min-width: 992px) {\r\n    .container {\r\n        width: 450px;\r\n    }\r\n}", ""]);
+exports.push([module.i, ".btn:focus,\r\n.upload-btn:focus {\r\n    outline: 0 !important;\r\n}\r\n\r\n.row {\r\n    margin-top: 80px;\r\n}\r\n\r\n.upload-btn {\r\n    color: #ffffff;\r\n    background-color: #ff9100;\r\n    border: none;\r\n    -webkit-transition: all 0.5s ease;\r\n    transition: all 0.5s ease;\r\n}\r\n\r\n.upload-btn:hover,\r\n.upload-btn:focus,\r\n.upload-btn:active,\r\n.upload-btn.active {\r\n    color: #ffffff;\r\n    background-color: #c97509;\r\n    border: none;\r\n}\r\n\r\nh4 {\r\n    padding-bottom: 30px;\r\n    color: #B8BDC1;\r\n}\r\n\r\n.glyphicon {\r\n    font-size: 5em;\r\n    color: #9CA3A9;\r\n}\r\n\r\nh2 {\r\n    margin-top: 15px;\r\n    color: #68757E;\r\n}\r\n\r\n.panel {\r\n    padding-top: 20px;\r\n    padding-bottom: 20px;\r\n    -webkit-box-shadow: 0px 10px 26px 5px rgba(0, 0, 0, 0.39);\r\n    box-shadow: 0px 10px 26px 5px rgba(0, 0, 0, 0.39);\r\n}\r\n\r\nh3.error {\r\n    background: rgb(247, 54, 54);\r\n    color: rgb(248, 248, 248);\r\n    padding: 0.8em;\r\n}\r\n\r\n#upload-input {\r\n    display: none;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n    .main-container {\r\n        width: 100%;\r\n    }\r\n}\r\n\r\n@media (min-width: 992px) {\r\n    .container {\r\n        width: 450px;\r\n    }\r\n}\r\n\r\n/*progress bar animation*/\r\n\r\n.progress-bar {\r\n    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);\r\n    background-size: 200% 200%;\r\n    -webkit-animation: animateGradient 5s ease infinite;\r\n    animation: animateGradient 5s ease infinite;\r\n}\r\n\r\n@-webkit-keyframes animateGradient {\r\n    0% {\r\n        background-position: 0% 50%\r\n    }\r\n    50% {\r\n        background-position: 100% 50%\r\n    }\r\n    100% {\r\n        background-position: 0% 50%\r\n    }\r\n}\r\n\r\n@keyframes animateGradient {\r\n    0% {\r\n        background-position: 0% 50%\r\n    }\r\n    50% {\r\n        background-position: 100% 50%\r\n    }\r\n    100% {\r\n        background-position: 0% 50%\r\n    }\r\n}", ""]);
 
 // exports
 
@@ -142,7 +141,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/components/file-uploader/file-uploader.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-xs-12\">\n            <div class=\"panel panel-default\">\n                <img style=\"height:100px;width:100%;\" src=\"http://www.inspirata.com/wp-content/themes/inspirata/images/logo-color.svg\">\n                <div class=\"panel-body\">\n                    <span class=\"glyphicon glyphicon-cloud-upload\"></span>\n                    <h2>File Uploader</h2>\n                    <h4>Inspirata</h4>\n                    <div class=\"progress\">\n                        <div class=\"progress-bar\" [style.width]=\"progressWidth\">{{progressText}}</div>\n                    </div>\n                    <button class=\"btn btn-lg upload-btn\" type=\"button\" (click)=\"onUploadClick()\">Upload File</button>\n                    <h3 class=\"error\" *ngIf=\"errorMessage\">{{errorMessage}}</h3>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n<input #file id=\"upload-input\" type=\"file\" (change)=\"onSelect($event)\">"
+module.exports = "<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-xs-12\">\n            <div class=\"panel panel-default\">\n                <div class=\"panel-body\">\n                    <span class=\"glyphicon glyphicon-cloud-upload\"></span>\n                    <h2>File Uploader</h2>\n                    <div class=\"progress\">\n                        <div class=\"progress-bar\" [style.width]=\"progressWidth\">{{progressText}}</div>\n                    </div>\n                    <button class=\"btn btn-lg upload-btn\" type=\"button\" (click)=\"onUploadClick()\">Upload File</button>\n                    <h3 class=\"error\" *ngIf=\"errorMessage\">{{errorMessage}}</h3>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n<input #file id=\"upload-input\" type=\"file\" (change)=\"onSelect($event)\">"
 
 /***/ }),
 
@@ -178,7 +177,7 @@ var FileUploaderComponent = /** @class */ (function () {
         this.errorMessage = null;
         this.progressWidth = "0%";
         this.progressText = "0%";
-        this.file.nativeElement.click();
+        this.file.nativeElement.click(); //to open file browser prompt window
     };
     FileUploaderComponent.prototype.onSelect = function (event) {
         //approach 1
@@ -285,7 +284,6 @@ var UploadService = /** @class */ (function () {
                 .subscribe(function (data) {
                 console.log('success', data);
             }, function (error) {
-                //console.log('error');
                 console.log("error", error);
             });
         }
@@ -308,9 +306,9 @@ var UploadService = /** @class */ (function () {
 var Constants = /** @class */ (function () {
     function Constants() {
     }
-    Constants.MAX_FILE_SIZE = 25 * 1024 * 1024; //25MB
+    Constants.MAX_FILE_SIZE = 100 * 1024 * 1024; //100MB
     Constants.MSG_SELECT_FILE = "Please select a file to upload.";
-    Constants.MSG_FILE_SIZE_EXCEED = "File size limit is 25MB.";
+    Constants.MSG_FILE_SIZE_EXCEED = "File size limit is 100MB.";
     Constants.FILE_UPLOAD_API = "http://localhost:3000/upload";
     return Constants;
 }());

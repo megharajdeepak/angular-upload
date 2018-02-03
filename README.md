@@ -9,7 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. Use `npm run start` to execute both server and client together.
 
 3. Wait until you see the following messages in command prompt\terminal:
-```
+```ruby
 [0] Server listening on port 3000
 [1] ** NG Live Development Server is listening on localhost:4200, open your brow
 ser on http://localhost:4200/ **

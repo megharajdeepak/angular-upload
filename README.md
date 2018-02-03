@@ -9,7 +9,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. Use `npm run start` to execute both server and client together.
 
 3. Wait until you see the following messages in command prompt\terminal:
-`[0] Server listening on port 3000
+```
+[0] Server listening on port 3000
 [1] ** NG Live Development Server is listening on localhost:4200, open your brow
 ser on http://localhost:4200/ **
 [1] Date: 2018-02-02T15:41:00.937Z
@@ -22,7 +23,8 @@ ser on http://localhost:4200/ **
 [1] chunk {styles} styles.bundle.js (styles) 35 kB [initial] [rendered]
 [1] chunk {vendor} vendor.bundle.js (vendor) 8.01 MB [initial] [rendered]
 [1]
-[1] webpack: Compiled successfully.`
+[1] webpack: Compiled successfully.
+```
 
 4. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
